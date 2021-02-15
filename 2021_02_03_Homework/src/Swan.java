@@ -2,9 +2,11 @@ public class Swan {
     String type;
     String color;
     String name;
-    int age;
-    boolean wild;
-    int distance;
+    int age = 0;
+    boolean wild = false;
+    int distance = 0;
+
+
 
     public void fly(int km) {
         System.out.println("Лебедь улетел на " + km + " километров");
@@ -25,6 +27,7 @@ public class Swan {
 class SwanInfo {
     public static void main(String[] args) {
         Swan swan1 = new Swan();
+        System.out.println(swan1.wild);
         swan1.type = "Cygnus columbianus";
         swan1.color = "Серый";
         swan1.name = "Дикарь";
