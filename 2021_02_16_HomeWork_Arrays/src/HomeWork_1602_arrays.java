@@ -29,18 +29,18 @@ public class HomeWork_1602_arrays {
 
         //Given an array of ints, return true if it contains no 1’s or it contains no 4’s.
 
-        int[] arr6 = new int[]{1, 2, 3};//true
-        int[] arr7 = new int[]{1, 2, 3, 4};//false
-        int[] arr8 = new int[]{2, 3, 4};//true
-        int[] arr9 = new int[]{7, 7, 7};//true
-        int[] arr10 = new int[]{1, 4};//false
+        int[] arr6 = new int[]{1, 2, 3};
+        int[] arr7 = new int[]{1, 2, 3, 4};
+        int[] arr8 = new int[]{2, 3, 4};
+        int[] arr9 = new int[]{7, 7, 7}
+        int[] arr10 = new int[]{1, 4};
 
 
         System.out.println(no14(arr6)); //→ true
         System.out.println(no14(arr7)); //→ false
         System.out.println(no14(arr8)); //→ true
         System.out.println(no14(arr9)); //→ true
-        System.out.println(no14(arr10));//→ true
+        System.out.println(no14(arr10));//→ false
     }
 
     private static boolean no14(int[] input) {
