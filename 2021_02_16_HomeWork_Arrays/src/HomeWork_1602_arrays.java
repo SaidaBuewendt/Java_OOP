@@ -32,7 +32,7 @@ public class HomeWork_1602_arrays {
         int[] arr6 = new int[]{1, 2, 3};
         int[] arr7 = new int[]{1, 2, 3, 4};
         int[] arr8 = new int[]{2, 3, 4};
-        int[] arr9 = new int[]{7, 7, 7}
+        int[] arr9 = new int[]{7, 7, 7};
         int[] arr10 = new int[]{1, 4};
 
 
