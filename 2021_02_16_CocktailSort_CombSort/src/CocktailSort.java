@@ -34,6 +34,7 @@ public class CocktailSort {
                 break;
             }
         }
+
     }
 
     public static void myPrint(int[] array) {

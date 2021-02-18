@@ -15,6 +15,7 @@ public class HW_1702_String {
         System.out.println(xyzMiddle("AAxyzBB")); //true
         System.out.println(xyzMiddle("AxyzBB"));//true
         System.out.println(xyzMiddle("AxyzBBB"));//false
+        //System.out.println(xyzMiddle("AxyzxyzBBB"));//false
         System.out.println("_________");
 
 
