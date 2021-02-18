@@ -51,8 +51,12 @@ public class Book {
         this.ISBN = ISBN;
     }
 
-    void setYear(int year) {
+    public void setYear(int year) {
         this.year = year;
+    }
+
+    public int getYear() {
+        return year;
     }
 
     void setNumberOfPages(int numberOfPages) {
@@ -74,6 +78,7 @@ public class Book {
     public double getRating() {
         return rating;
     }
+
 
     public String getName() {
         return name;

@@ -6,8 +6,7 @@ public class ArrayExercise {
         int[] arr2 = new int[]{1, 2};
         int[] arr3 = new int[]{1};
 
-        printArray(shiftLeft(arr1));
-        ; // → [2, 5, 3, 6]
+        printArray(shiftLeft(arr1)); // → [2, 5, 3, 6]
         printArray(shiftLeft(arr2)); // → [2, 1]
         printArray(shiftLeft(arr3)); // → [1]
 

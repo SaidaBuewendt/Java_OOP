@@ -44,7 +44,7 @@ public class Shelf {
         int check = 1;
         while (check > 0) {
             check = 0;
-            for (int i = 0; i < size-1; i++) {
+            for (int i = 0; i < size - 1; i++) {
                 if (books[i].numberOfPages > books[i + 1].numberOfPages) {
                     Book temp = books[i];
                     books[i] = books[i + 1];
@@ -70,19 +70,19 @@ public class Shelf {
         while (start <= end) {
             boolean swap = false;
             for (int i = start; i < end; i++) {
-                if (books[i].year > books[i + 1].year) {
-                    Book temp = books[i];
-                    books[i] = books[i + 1];
-                    books[i + 1] = temp;
+                if (books[i].getYear() > books[i + 1].getYear()) {
+                    int temp = books[i].getYear();
+                    books[i].setYear(books[i + 1].getYear());
+                    books[i + 1].setYear(temp);
                     swap = true;
                 }
             }
             end--;
             for (int i = end; i > start; i--) {
-                if (books[i].year < books[i - 1].year) {
-                    Book temp = books[i - 1];
-                    books[i - 1] = books[i];
-                    books[i] = temp;
+                if (books[i].getYear() < books[i - 1].getYear()) {
+                    int temp = books[i - 1].getYear();
+                    books[i - 1].setYear(books[i].getYear());
+                    books[i].setYear(temp);
                     swap = true;
                 }
             }
