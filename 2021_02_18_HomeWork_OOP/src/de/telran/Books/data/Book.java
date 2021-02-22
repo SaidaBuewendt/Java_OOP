@@ -1,17 +1,17 @@
 package de.telran.Books.data;
 
 public class Book {
-    public String name;
-    public String ISBN;
-    public String author;
-    public int year;
-    public int numberOfPages;
-    public String binding;
-    public String genre;
-    public double rating;
-    public double price;
-    public String review;
-    public boolean used;
+    private String name;
+    private String ISBN;
+    private String author;
+    private int year;
+    private int numberOfPages;
+    private String binding;
+    private String genre;
+    private double rating;
+    private double price;
+    private String review;
+    private boolean used;
 
     static int count = 1;
     public int bookID;
@@ -71,6 +71,10 @@ public class Book {
         this.genre = genre;
     }
 
+    public int getNumberOfPages() {
+        return numberOfPages;
+    }
+
     void setPrice(double price) {
         this.price = price;
     }
@@ -100,18 +104,18 @@ class BookInfo {
 
 
         Book book1 = new Book("Война и мир", "Лев Толстой", 1000, "Твердый", 2013);
-        book1.name = "Война и мир";
+/*        book1.name = "Война и мир";
         book1.author = "Толстой Л.Н.";
         book1.year = 2013;
         book1.numberOfPages = 1504;
         book1.binding = "Твердый";
         book1.genre = "Роман";
         book1.rating = 9.78;
-        book1.price = 900;
+        book1.price = 900;*/
 
 
         Book book2 = new Book("Убить пересмешника", "Харпер Ли", 350, "Мягкий", 2018);
-        book2.name = "Убить пересмешника";
+/*        book2.name = "Убить пересмешника";
         book2.ISBN = "978-5-17-090411-2";
         book2.author = "Харпер Ли";
         book2.year = 2018;
@@ -119,11 +123,11 @@ class BookInfo {
         book2.binding = "Мягкий";
         book2.genre = "Роман";
         book2.rating = 8.92;
-        book2.price = 315;
+        book2.price = 315;*/
 
 
         Book book3 = new Book("Шантарам", "Робертс Грегори Дэвид", 800, "Твердый", 2015);
-        book3.name = "Шантарам";
+/*        book3.name = "Шантарам";
         book3.ISBN = "978-5-389-01095-6";
         book3.author = "Робертс Грегори Дэвид";
         book3.year = 2015;
@@ -131,11 +135,11 @@ class BookInfo {
         book3.binding = "Твердый";
         book3.genre = "Роман";
         book3.rating = 8.55;
-        book3.price = 1200;
+        book3.price = 1200;*/
 
 
         Book book4 = new Book("Азбука", "Дмитриева В.Г.", 33, "Твердый", 2019);
-        book4.name = "Азбука";
+/*        book4.name = "Азбука";
         book4.ISBN = "978-5-17-117512-2";
         book4.author = "Дмитриева В.Г.";
         book4.year = 2019;
@@ -143,11 +147,11 @@ class BookInfo {
         book4.binding = "Мягкий";
         book4.genre = "Обучающая литература";
         book4.rating = 9.0;
-        book4.price = 101;
+        book4.price = 101;*/
 
 
         Book book5 = new Book("Книга о вкусной и здоровой пище", "Погожева А.В.", 70, "Мягкий", 2016);
-        book5.name = "Книга о вкусной и здоровой пище";
+/*        book5.name = "Книга о вкусной и здоровой пище";
         book5.ISBN = "978-5-699-88867-2";
         book5.author = "Погожева А.В.";
         book5.year = 2016;
@@ -156,6 +160,6 @@ class BookInfo {
         book5.genre = "Кулинария";
         book5.rating = 6.67;
         book5.price = 518;
-
+*/
     }
 }

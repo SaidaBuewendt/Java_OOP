@@ -45,7 +45,7 @@ public class Shelf {
         while (check > 0) {
             check = 0;
             for (int i = 0; i < size - 1; i++) {
-                if (books[i].numberOfPages > books[i + 1].numberOfPages) {
+                if (books[i].getNumberOfPages() > books[i + 1].getNumberOfPages()) {
                     Book temp = books[i];
                     books[i] = books[i + 1];
                     books[i + 1] = temp;
@@ -59,7 +59,7 @@ public class Shelf {
     public void printWithPages() {
         System.out.println(ANSI_PINK + "Пузырьковая сортировка по количеству страниц: " + ANSI_RESET);
         for (int i = 0; i < size; i++) {
-            System.out.print(books[i].name + " [" + books[i].numberOfPages + "]\n");
+            System.out.print(books[i].getName() + " [" + books[i].getNumberOfPages() + "]\n");
         }
     }
 
@@ -97,7 +97,7 @@ public class Shelf {
     public void printWithYear() {
         System.out.println(ANSI_PINK + "Коктейльная сортировка по Дате издания:" + ANSI_RESET);
         for (int i = 0; i < size; i++) {
-            System.out.print(books[i].name + " [" + books[i].year + "]\n");
+            System.out.print(books[i].getName() + " [" + books[i].getYear() + "]\n");
         }
     }
 }
