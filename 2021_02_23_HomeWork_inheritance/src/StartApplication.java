@@ -5,7 +5,7 @@ public class StartApplication {
 
         Student pasha = new Student("Паша", "Алексеев", "43534", "Физический факультет", 20, 3.5, 3, 123456);
         Person dasha = new Student("Даша", "Семёнофф", "5345243", "Химический факультет", 19, 4.0, 2, 456789);
-        //Object rita = new Student("Рита", "Иванова", "3564356345", 4.5, 1, 789123);
+        Object rita = new Student("Даша", "Семёнофф", "5345243", "Химический факультет", 19, 4.0, 2, 456789);
 
         Teacher borisov = new Teacher("Борис Борисович", "Борисов", "1998_0112", 50, "Фактультет Математики", "borisov@borisov.ru", 3000, 512, "Доктор наук");
         Person ivanov = new Teacher("Иван Иванович", "Иванов", "1998_0111", 45, "Фактультет Кибернетики", "ivanov@ivanov.ru", 2500, 112, "Кандидат наук");
@@ -19,7 +19,7 @@ public class StartApplication {
         UniAll univer = new UniAll(10);
         univer.addPeople(pasha);
         univer.addPeople(dasha);
-        //univer.addPeople(rita);
+        univer.addPeople((Student) rita);
         univer.addPeople(borisov);
         univer.addPeople(ivanov);
         //univer.addPeople(petrov);
