@@ -15,7 +15,6 @@ public class Recursion {
         if (n % 10 == 7) {
             count++;
         }
-
         if (n > 10) {
             return count7(n / 10, count);
         } else {
