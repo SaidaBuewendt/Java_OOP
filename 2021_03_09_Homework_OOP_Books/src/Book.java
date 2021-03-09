@@ -15,6 +15,7 @@ public class Book {
     }
 
     public Book() {
+
     }
 
 
@@ -26,13 +27,13 @@ public class Book {
     }
 
     public void setAuthor(String author) {
-        if (author != null || !author.trim().isEmpty())
+        if (author != null && !author.trim().isEmpty())
             this.author = author;
         else System.out.println("Author is empty");
     }
 
     public void setTitle(String title) {
-        if (title != null || !title.trim().isEmpty())
+        if (title != null && !title.trim().isEmpty())
             this.title = title;
         else
             System.out.println("Title is empty");

@@ -43,7 +43,14 @@ public class BooksApp {
         book6.setIsbn(9876541);
         book6.setPricePerPage(2.36);
 
-        Book[] books = new Book[]{book1, book2, book3, book4, book5, book6};
+        Book book7 = new Book();
+        book7.setTitle("");
+        book7.setAuthor("");
+        book7.setCountPages(0);
+        book7.setIsbn(10000000);
+        book7.setPricePerPage(0);
+
+        Book[] books = new Book[]{book1, book2, book3, book4, book5, book6, book7};
 
         printBooks(books);
         getTotalPrice(books);
