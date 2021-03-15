@@ -19,6 +19,7 @@ public class EmployeeAppl {
         System.out.println("______________________________");
         System.out.println("Total sales made by salesmen: " +getСompanyRevenue(emps));
 
+
     }
 
     private static double getСompanyRevenue(Employee[] emps) {
